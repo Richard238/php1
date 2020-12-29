@@ -1,4 +1,4 @@
-
+/////  Current PHP version: 7.4.2
 //// TRY to extract just the author or from the file response.json
 
 <?php
@@ -7,8 +7,11 @@ $json = json_decode(file_get_contents('response.json'), true);
      echo $elem;
  }
 
- // echo the whole thing to show it works, and what it looks like.
+echo 'Current PHP version: ' . phpversion();
+/////  Current PHP version: 7.4.2
 
+
+// echo the whole thing to show it works, and what it looks like.
 // var_dump - confirms file is an array
 var_dump($json);
 
